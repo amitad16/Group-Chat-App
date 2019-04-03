@@ -1,0 +1,17 @@
+extends layout
+
+block styles
+    link(rel="stylesheet", href="/css/main.css")
+
+block content
+    .col-sm-3.col-sm-offset-4.frame
+        ul(id="chat-wrapper")
+        div
+            .msj-rta.macro(style='margin:auto')
+                .text.text-r(style='background:whitesmoke !important')
+                    input.mytext(id="input-message", type="text", placeholder='Type a message')
+    
+
+block scripts
+    script(src="/socket.io/socket.io.js")
+    script(src="/js/main.js")
